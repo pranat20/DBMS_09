@@ -1,0 +1,57 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| airlines           |
+| bank               |
+| bankdb             |
+| college            |
+| airlinesdb         |
+| employee           |
+| information_schema |
+| mysql              |
+| new                |
+| anyy               |
+| pran               |
+| performance_schema |
+| post               |
+| sys                |
++--------------------+
+14 rows in set (0.01 sec)
+
+mysql> use collegedemos;
+Database changed
+mysql> show tables;
++------------------------+
+| Tables_in_college |
++------------------------+
+| stud                   |
++------------------------+
+1 row in set (0.04 sec)
+
+mysql> desc stud;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| rollno  | int         | YES  |     | NULL    |       |
+| name    | varchar(20) | YES  |     | NULL    |       |
+| address | varchar(20) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+mysql> select * from stud;
++--------+----------+---------+
+| rollno | name     | address |
++--------+----------+---------+
+|    101 | pranat   | pune    |
++--------+----------+---------+
+1 row in set (0.01 sec)
+
+mysql> select * from stud;
++--------+----------+---------+
+| rollno | name     | address |
++--------+----------+---------+
+|    101 | prajakta | pune    |
+|    102 | anuj     | pune    |
++--------+----------+---------+
+2 rows in set (0.00 sec)
